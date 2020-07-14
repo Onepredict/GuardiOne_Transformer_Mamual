@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>User Guide - GurdiOne Transformer</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "User Guide";
+    var mkdocs_page_input_path = "User Guide.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> GurdiOne Transformer</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="..">Home</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../For%20Product%20Safety%20%26%20Copyrights/">For Product Safety & Copyrights</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../Product%20Introduction/">Product Introduction</a>
+  </li>
+    
+      
+
+
+  
+    
+    <li class="navtree toctree-l1 page current">
+      <a class="current" href="./">
+        User Guide
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l1 current">
+    <ul class="subnav-l1 current">
+    
+      
+        <li class="toctree-l2">
+          <a class="toctree-l3" href="#asset-management">Asset Management</a>
+        </li>
+    
+      
+        <li class="toctree-l2">
+          <a class="toctree-l3" href="#power-substation-monitoring">Power Substation Monitoring</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l2">
+    <a href="#power-transformer-monitoring">
+      Power Transformer Monitoring
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l2">
+    <ul class="subnav-l2 toc-hidden">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#summary-information">Summary Information</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#trend-analysis">Trend Analysis</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#gas-trend-analysis">Gas Trend Analysis</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#similarity-trend-analysis-optional">Similarity Trend Analysis (Optional)</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#industrial-ai-based-diagnosis-and-prognosis">Industrial AI-based Diagnosis and Prognosis</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#rule-dissolved-key-gas-concentration-limits">
+      Rule - Dissolved key gas concentration limits
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#rule-duval-triangle-1">Rule – Duval Triangle 1</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#rule-doernenburgrogers-ratios">Rule – Doernenburg/Rogers Ratios</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#rule-basic-gas-ratios">Rule – Basic Gas Ratios</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#event-history">Event History</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../FAQ/">FAQ</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../Troubleshooting%20and%20Customer%20Service/">Troubleshooting and Customer Service</a>
+  </li>
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../Appendix/">Appendix</a>
+  </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">GurdiOne Transformer</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>User Guide</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="user-guide">User Guide</h1>
+<h2 id="asset-management">Asset Management</h2>
+<p>The asset management platform provides all transformers’ information as table chart. You can check the list of transformers efficiently and search transformers with specific conditions. </p>
+<p><img alt="" src="../img/fig2.png" /></p>
+<p><strong>(1)   Transformer Information List: The contents of the table includes the following information for integrated management:</strong> serial number, transformer tag, substation name, country, city, street, voltage(kV), capacity(kVA), one/three-phase, operating date, manufacturer, manufacturing date, and application.<br />
+※ The unit for gas in this software is ppm.<br />
+※ All dates in this software in yy/mm format.<br />
+<strong>(2)   Search Box:</strong> You can search the transformers by typing a specific information on the ‘Search Box’. </p>
+<h2 id="power-substation-monitoring">Power Substation Monitoring</h2>
+<p>This function provides summarized status of the selected transformers regionally in an aspect of spatial view, alarm rate, status diagram, and latest events.</p>
+<p><img alt="" src="../img/fig3.PNG" /></p>
+<p><strong>(1)   Asset Tree Structure:</strong> A tree-like panel represents the transformers in a hierarchical structure and analysis methods of each transformer in the database. You can click a label to expand a node and reveal its hierarchy. If you select the specific country/city/street of transformer in the left tree-like panel, right map panel and other widget contents are changed to suit for the information in the selected area. When a specific transformer model is selected, the details of health information about the selected transformation are expanded.  </p>
+<p><strong>(2)   Time Setting:</strong> The user can examine information through time zone using the time setting function. The time setting function can be set throughout the whole timeline. This means when the time set is applied, all pages will follow the set the user have made. The time settings are applicable in  dates also.  Followings are the instructions of how the time settings are enabled.  </p>
+<p><strong>(3)   Spatial View:</strong> The panel shows the geographical distribution of transformer locations. As a default first display, a world map is provided. The user can zoom in and out from the world and specific city map by mouse wheel button or click  <img alt="" src="../img/fig4.png" />, <img alt="" src="../img/fig5.png" /> icon. The user also can click <img alt="WebCapture" src="../img/fig7.png" /> icon to maximize it to full-screen and click   icon to reset map to north direction. The area with a red point is the country or region where the user has transformers.  </p>
+<p><strong>(4)   Alarm Rate by Health Status:</strong> The panel shows the percentage of transformer at each health status by color-bar graph.<br />
+※ Green: (Normal status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status)    </p>
+<p><strong>(5)   Status Diagram:</strong> The donut chart displays the number of transformers at each health status in the selected area. When you put the cursor on the chart, a pop-up displays the percentage of transformers in the corresponding status. The number centered on the donut chart means the total number of transformers in the selected area. In addition, the number of transformers at each health status is also displayed below the chart.  </p>
+<p><strong>(6)   Latest Event:</strong> The panel updates the diagnosis result periodically. Briefly provides transformer tag, health status diagnosed by AI, and diagnosis date.  </p>
+<p><strong>(7)   Event History:</strong> The table shows transformers’ information in the selected region. The content includes substation name, serial number, transformer tag, voltage(kV), operating date, manufacturer, manufacturing date, DGA sampling date, and diagnosis/prognosis results.  Clicking specific transformer tag in the table switches the dashboard into the description page about the corresponding transformer.  </p>
+<h2 id="power-transformer-monitoring">Power Transformer Monitoring</h2>
+<p>This screen covers the detailed information of the targeted transformer  including trend analysis, industrial AI-based diagnosis and prognosis results, rule-based diagnosis results and  summarized results from core features. </p>
+<hr />
+<h3 id="summary-information">Summary Information</h3>
+<p>This function provides the latest analysis results of the transformer in brief.</p>
+<p><img alt="" src="../img/fig8.PNG" /></p>
+<p><strong>(1)   Function Tree:</strong> When enter the individual transformer page, the function tree is displayed at the right panel. The panel includes a summary of the transformer information, AI, Rule related graphs and the setting tab for checking detailed information of the target transformer.   </p>
+<p><strong>(2)   Fault Isolation:</strong> The panel shows fault components in 3D visual image. When the fault is detected on the transformer by Industrial AI-based diagnosis, the fault component is highlighted in the 3D model. </p>
+<p><strong>(3)   Comprehensive Predictive Diagnosis Result:</strong> The panel summarizes the predictive diagnosis results once the measured data are loaded. It provides the latest diagnosis results in reference to IEEE Std C57.104TM-2008 ‘Dissolved key gas concentration limits’ diagnostics standard. The fault mode evaluated by IEC 60599:2015 - Duval Triangle 1 method is also displayed, but it is inactivated in case there is no fault. In addition, the results of diagnosis and prognosis are displayed based on industrial-AI methods.  </p>
+<p><strong>(4)   DGA Trend</strong>: The panel displays the concentration trends of the main six gases (H2, CH4, C2H2, C2H4, C2H6, CO). If target transformer data has at least four continuous data and it is evaluated that the data is in error, the data provided in this dashboard is the calibrated data. When you put the cursor on a data point, the values of six gases are indicated by a pop-up window.   </p>
+<p><strong>(5)   Health State Trend:</strong> The panel displays the entire health status (normal, warning, critical, fault) trend of the transformer, which allows users to understand the overall changes in transformer status. When you put the cursor on a data point, the detailed health status is indicated by a pop-up window.   </p>
+<p><strong>(6)   DGA Similarity (Optional):</strong> Based on big data analysis, the panel shows the top three most similar transformers and the corresponding similarity. Users can check the status of the most similar transformers as a reference for the future status of the targeted transformer identification. The specific details about DGA similarity are illustrated in the ‘Trend - Similarity Trend’ page.  </p>
+<hr />
+<h3 id="trend-analysis">Trend Analysis</h3>
+<p>This function provides two main methods which is featured on trend analysis. One is gas trend analysis, descripting the transformer’s status. The other is a DGA-based similarity trend analysis (optional), which also informs the status with comparing historical data with the most similar trends to the targeted transformer. Quick and immediate actions can be made through monitoring the status variation.</p>
+<hr />
+<h3 id="gas-trend-analysis">Gas Trend Analysis</h3>
+<p>This function offers three types of plots that represents gas characteristics intuitively. <br />
+※ All DGA data provided on this dashboard are actual values. It is not a calibrated data value.</p>
+<p><img alt="" src="../img/fig9.PNG" /></p>
+<p><strong>(1)   Gas Concentration Trend:</strong> The panel visually provides the whole gas DGA data throughout the time. The plotted gases are H2, CH4, C2H2, C2H4, C2H6, CO, CO2, TDCG, C3H8, O2, N2, etc. The users can hide a gas trend by clicking the legend of the gas. When you put the cursor on a data point, the values of all selected gases are indicated by a pop-up window.</p>
+<p><strong>(2)   Key Gas Trend:</strong> In order to make it easier for the users to understand the correlation between the three key hydrocarbon gases (CH4, C2H4, C2H6), the panel shows 3D trend plot of the three gases over time. When you put the cursor on a data point, the values of three gases are indicated by a pop-up window.</p>
+<p><strong>(3)   Rate of Change Trend:</strong> The trend provides the rate of change of each gas between two measuring points. The value is calculated by dividing the gas difference between two measuring points by month difference between two measured dates. The users can hide a rate change trend of specific gas trend by clicking the legend of the gas. When you put the cursor on a data point, the rate change of all selected gases are indicated by a pop-up window.</p>
+<hr />
+<h3 id="similarity-trend-analysis-optional">Similarity Trend Analysis (Optional)</h3>
+<p>This function provides users with meaningful insights for predictive maintenance of transformers by presenting the most similar transformers. 
+ <img alt="" src="../img/fig10.PNG" /></p>
+<p><strong>(1)   DGA Similarity Trend:</strong> This figure are results of the health feature space. It showsthe trend of the targeted transformer in features values comparing with three transformers that have  the most similar status .  The values are variable in representing the status of the transformer. Industrial AI are applied to calculate the results. It is composed of two values and represents the x &amp; y axis in the figure. The DGA-based similarity analysis technique aims and finds the most similar transformer trend through four continuous feature values comparisons, so this figure provides the four feature values of the targeted transformer and the three transformers with the highest similarity. In addition, the fifth feature value of the three transformers with the highest similarity is also provided at the same time, thereby providing a reference value for understanding the future featured value of the targeted transformer. 
+※ Red : (Targeted transformer) / Blue : (First similar transformer) / Yellow : (Second similar transformer) /  <br />
+Green : (Third similar transformer) </p>
+<p><strong>(2)   DGA Similarity Chart:</strong> The panel shows the top three most similar transformer tags and the corresponding similarity.</p>
+<p><strong>(3)   DGA Trend:</strong> Click the ‘DGA Trend’ tab, the panel displays the main six gases of DGA (H2, CH4, C2H2, C2H4, C2H6, CO) trend of three similar transformers and the targeted one. In addition, the highlighted part is the most similar gas value of three similar transformers comparing to the latest four measuring data of the targeted transformer. Therefore, the users can check the 5th set of data of three similar transformers as a reference for the targeted transformer. When you put the cursor on a point, a pop-up displays the values of six gases.</p>
+<p><strong>(4)   Status Trend:</strong> By clicking the ‘Status Trend’ tab, the panel displays the status trend of three similar transformers and the targeted one’s status. Similar to the DGA Trend, the highlighted part is the most similar interval status, compared to the targeted transformer. In the same way, the users can check the 5th set of state of three similar transformers. This analytic method helps for a better understanding of the targeted transformer’s next health state. When you put the cursor on a point, a pop-up displays the very status at the moment.</p>
+<hr />
+<h3 id="industrial-ai-based-diagnosis-and-prognosis">Industrial AI-based Diagnosis and Prognosis</h3>
+<p>This function provides overall diagnostic and prognostic results based on industrial AI methods. The dashboard contains health feature space, health state trend, the health status at present and future, and fault isolation.   </p>
+<p><img alt="" src="../img/fig11.PNG" /></p>
+<p><strong>(1)   Health Feature Space:</strong> Health feature space is composed of two key health features derived from deep learning. This space is a diagnostic space which shows the entire health feature trend over time. The right-bottom direction of health features means the change in transformer status from normal(green) to fault(red). Users can trace the movement of feature points to check the condition of the transformers. The black line in the plot indicates the threshold between critical and fault status. If featured points are colored in orange or close to the threshold, it is recommended to check the value change carefully for transformer protection. Even if the movement of the dots are slight, it may cause a huge damage to the transformer only with a small abnormal operation. </p>
+<p><strong>(2)   Health State Trend:</strong> The panel provides a historical change of health status. And it also presents the predicted status after a year. You can plan the maintenance action by referring to this. When you put the cursor on a data point, the health status at that moment is indicated by a pop-up window.
+*Exception: If the fault is detected, we do not draw a prognostic result. </p>
+<p><strong>(3)   Diagnosis and Prognosis Result:</strong> The panel shows the results of diagnosis and prognosis with date.</p>
+<p><strong>(4)   Fault Isolation:</strong> The panel tells you which of four components (Winding, OLTC, Core, and Bushing) is faulty.</p>
+<hr />
+<h3 id="rule-dissolved-key-gas-concentration-limits">Rule - Dissolved key gas concentration limits</h3>
+<p>This function provides the description of the diagnostic analysis according to the rule-based method ‘IEEE Std C57.104TM-2008 - dissolved key gas concentration limits’.</p>
+<p><img alt="" src="../img/fig12.PNG" /></p>
+<p><strong>(1)   Dissolved Key Gas Concentration Limits Trend:</strong> The panel shows trends of each gas and the whole gas in charts (H2, CH4, C2H2, C2H4, C2H6, CO, CO2, TDCG).  The thresholds of the gas and TDCG are also provided to be easily reviewed by which status the targeted gas is invlolved. In the charts, the very gas values are displayed as you hover over different charts.
+※ Green : (Condition 1) / Yellow : (Condition 2) / Orange : (Condition 3) / Red : (Condition 4)</p>
+<p><strong>(2)   Dissolved Key Gas Concentration Limits Result:</strong> The right panel contains the latest diagnostics results of the ‘Dissolved Key Gas Concentration Limits’ detection method.</p>
+<hr />
+<h4 id="rule-duval-triangle-1">Rule – Duval Triangle 1</h4>
+<p>This function provides the description of the diagnostic analysis according to the rule-based method ‘IEC 60599:2015 - Duval Triangle 1’ fault identification method’.  </p>
+<p><img alt="" src="../img/fig13.PNG" /></p>
+<p><strong>(1)   Duval Triangle 1:</strong> The main panel contains fault modes evaluated by the ‘Duval Triangle 1’ method. The method is active when the transformer is in fault status by means of AI techniques. Concentrations (ppm) of CH4, C2H4, and C2H2 are shown as percentages of thetotal (CH4+C2H4+C2H2) and points are (%CH4, %C2H4, %C2H2) on the triangular coordinate system.  The triangle chartis fenced off into different fault zones. The designated fault type decides the status according to the point location and indicates what kind of gas concentration it is. The small square boxes below the triangle corresponds to the fault modes (in color). The square boxes have text tags right next to it and when the faults are detected the square boxes blinks to be notified for the users.</p>
+<hr />
+<h4 id="rule-doernenburgrogers-ratios">Rule – Doernenburg/Rogers Ratios</h4>
+<p>This function provides the description of the diagnostic analysis according to the rule-based method ‘IEEE Std C57.104TM-2008 - Doernenburg/Rogers Ratios fault identification method’. </p>
+<p><img alt="" src="../img/fig14.PNG" /></p>
+<p><strong>(1)   Rogers Ratios:</strong> The left panel contains Rogers Ratios in which the concentrations of gases in a 3-axis cube graph (each axis is C2H2/C2H4, CH4/H2, C2H4/C2H6). The small square boxes below the cube represents the fault mode. The value points location shows the specific fault condition. GuardiOne® Transformer provides the latest fault modes. The square boxes have text tags right next to it and when the faults are detected the square boxes blinks to be notified for the user. This method is active when the transformer is in fault status (only when detected to be faulty) by AI techniques.</p>
+<p><strong>(2)   Doernenburg Ratios:</strong> The right panel contains Doernenburg Ratios in four distinct gas concentrations (the specific ratios are CH4/H2, C2H2/C2H4, C2H2/CH4, C2H6/C2H2). The latest fault mode is highlighted in the graph. This method is also active when the transformer in fault status (only when detected to be faulty) by AI techniques.</p>
+<hr />
+<h4 id="rule-basic-gas-ratios">Rule – Basic Gas Ratios</h4>
+<p>This function provides the description of the diagnostic analysis according to the rule-based method ‘IEC 60599:2015 – Basic Gas Ratios fault identification method’.</p>
+<p><img alt="" src="../img/fig15.PNG" /></p>
+<p><strong>(1)   Basic Gas Ratios:</strong> The main panel contains the concentrations of gases in a 3-axis cube graph (each axis is C2H4/C2H6, CH4/H2, C2H2/C2H4) and the area of six different types of fault modes. The small square boxes below the cube represents the fault modes, and the latest fault mode is pointed at the corresponding fault mode area. The method of Basic Gas Ratios is similar to Roger Ratios. However, the gas ratios used for analysis and the corresponding fault modes are different from Roger Ratios. This method is operated only when the AI algorithm diagnoses a fault.</p>
+<hr />
+<h3 id="event-history">Event History</h3>
+<p>This function offers a clear overview of the latest status upon the entire transformers analyzed by GuardiOne® Transformer.</p>
+<p><img alt="" src="../img/fig16.PNG" /></p>
+<p><strong>(1)   Event History:</strong> The main table lists up all transformers’ information briefly and the periodic status diagnosed by GuardiOne® Transformer. The content includes basic information such as serial number, location information (Country – City – Substation), measurement date, latest status and the status after a year. If the transformer is in fault status on the diagnosis procedure, the prognosis algorithm cannot be operated, so concluding the results are not possible. Click the page number for checking the other transformers’ status. information.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../FAQ/" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Product%20Introduction/" class="btn btn-neutral" title="Product Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Product%20Introduction/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../FAQ/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
