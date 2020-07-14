@@ -11,3 +11,10 @@ pages:
   - Troubleshooting and Customer Service: Troubleshooting and Customer Service.md
   - Appendix: Appendix.md
 
+site:
+    git checkout mkdocs
+    mkdocs build
+    git checkout master
+    cp -R site/* .
+    rm -rf site
+    echo Ready to commit and push
