@@ -4,11 +4,11 @@ theme:
   name: 'rtd-dropdown'
 # material or rtd-dropdown
 
-nav:
-  - 'Contents': index.md
-  - 'For Product Safety & Copyrights': For Product Safety & Copyrights.md
-  - 'Product Introduction': Product Introduction.md
-  - 'User Guide': User Guide.md
-  - 'FAQ': FAQ.md
-  - 'Troubleshooting and Customer Service': Troubleshooting and Customer Service.md
-  - 'Appendix': Appendix.md
+site:
+  - Contents: index.md
+  - For Product Safety & Copyrights: For Product Safety & Copyrights.md
+  - Product Introduction: Product Introduction.md
+  - User Guide: User Guide.md
+  - FAQ: FAQ.md
+  - Troubleshooting and Customer Service: Troubleshooting and Customer Service.md
+  - Appendix: Appendix.md
