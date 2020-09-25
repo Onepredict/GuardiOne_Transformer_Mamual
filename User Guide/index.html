@@ -113,6 +113,111 @@
           <a class="toctree-l4" href="#asset">Asset</a>
         </li>
     
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#alarm">Alarm</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#monitoring">Monitoring</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l2">
+    <a href="#power-transformer-monitoring">
+      Power Transformer Monitoring
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l2">
+    <ul class="subnav-l2 toc-hidden">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#summary-information">Summary Information</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#trend-analysis">Trend Analysis</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#industrial-ai-based-diagnosis-and-prognosis">
+      Industrial AI-based Diagnosis and Prognosis
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#blue-normal-status-green-caution-status-yellow-warning-status-orange-critical-status-red-fault-status">※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status).</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#rule-ieee-std-c57104tm-2008">Rule - IEEE Std C57.104TM-2008</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#rule-iec-605992015">Rule - IEC 60599:2015</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#rule-japan-etra">Rule - JAPAN ETRA</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#rule-duval-triangle-1">Rule - Duval Triangle 1</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#rule-doernenburg-and-rogers-ratios">Rule - Doernenburg and Rogers Ratios</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#rule-basic-gas-ratios">Rule - Basic Gas Ratios</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#similarity-trend-analysis-optional">Similarity Trend Analysis (Optional)</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#status-analysis-report">Status Analysis Report</a>
+        </li>
+    
     </ul>
   </li>
 
@@ -199,377 +304,313 @@
 <ul>
 <li>Data upload: Click the upload icon, the data input window pops up. Users can manually enter data in the data entry window. The information such as data acquisition date, H2, C2H2, C2H4, C2H6, CH4, CO must be entered for software calculation activation. </li>
 </ul>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/asset_gas_input.png" height="180px" width="400px">
+</figure>
 
--   Data update: Click the update icon, the data input window pops up, allowing the user to modify the data.
--   Data delete: Specific data can be deleted by clicking the delete icon.
--   Data download: It also provides the function to download all DGA data for a specific transformer. When you click the download icon, you can download data in csv file format.
-
-### Alarm 
-If the diagnosis or prognosis status of transformer is worse than the caution level, it is displayed in the alarm table.
-
----
-
+<ul>
+<li>Data update: Click the update icon, the data input window pops up, allowing the user to modify the data.</li>
+<li>Data delete: Specific data can be deleted by clicking the delete icon.</li>
+<li>Data download: It also provides the function to download all DGA data for a specific transformer. When you click the download icon, you can download data in csv file format.</li>
+</ul>
+<h3 id="alarm">Alarm</h3>
+<p>If the diagnosis or prognosis status of transformer is worse than the caution level, it is displayed in the alarm table.</p>
+<hr />
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/alarm.png" height="200px" width="500px">
+</figure>
 
-
- Alarm table includes analysis date, diagnostic status, prognostic status, corresponding possible faults and findings through gas value comparison, and recommended analysis date*
-
-*&nbsp;Recommended analysis date: Fault – Maintenance Required / Critical – One month after analysis date / Warning – Three months after analysis date / Caution - Six months after analysis date
-
--   The default sequence is listed from fault to normal based on diagnostic results.
--   User can change the sorting sequence by clicking the upper and lower triangle icons in diagnosis or prognosis
--   Click the transformer name, the screen will change to analysis summary page of the corresponding transformer.
-
-### Monitoring
-This function provides spatial view of user location, registered all transformers, summary of all transformers status, alarm rate, latest alarms.  
-
----
-
-**(1)   Time Setting:** The user can examine information through time zone using the time setting function. The time setting function can be set throughout the whole timeline. This means when the time set is applied, all pages will follow the set the user have made. The time settings are applicable in dates also. Followings are the instructions of how the time settings are enabled.  
-
-
+<p>Alarm table includes analysis date, diagnostic status, prognostic status, corresponding possible faults and findings through gas value comparison, and recommended analysis date*</p>
+<p>*&nbsp;Recommended analysis date: Fault – Maintenance Required / Critical – One month after analysis date / Warning – Three months after analysis date / Caution - Six months after analysis date</p>
+<ul>
+<li>The default sequence is listed from fault to normal based on diagnostic results.</li>
+<li>User can change the sorting sequence by clicking the upper and lower triangle icons in diagnosis or prognosis</li>
+<li>Click the transformer name, the screen will change to analysis summary page of the corresponding transformer.</li>
+</ul>
+<h3 id="monitoring">Monitoring</h3>
+<p>This function provides spatial view of user location, registered all transformers, summary of all transformers status, alarm rate, latest alarms.  </p>
+<hr />
+<p><strong>(1)   Time Setting:</strong> The user can examine information through time zone using the time setting function. The time setting function can be set throughout the whole timeline. This means when the time set is applied, all pages will follow the set the user have made. The time settings are applicable in dates also. Followings are the instructions of how the time settings are enabled.  </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Powr_substation_Monitoring_1.PNG" height="100px" width="200px">
+</figure>
 
-
-**(2)   Asset Tree Structure:** A tree-like panel represents the registered transformers. Click the specific transformer, the screen will change to analysis summary page of the corresponding transformer.  
-
-
+<p><strong>(2)   Asset Tree Structure:</strong> A tree-like panel represents the registered transformers. Click the specific transformer, the screen will change to analysis summary page of the corresponding transformer.  </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Powr_substation_Monitoring_2.PNG" height="200px" width="220px">
+</figure>
 
-
-**(3)   Spatial View:** The panel shows the geographical distribution of transformer locations. As a default first display, the area marked in red point is where the transformer is installed. The user can zoom in and out from the world and specific city map by mouse wheel button or click  <img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/fig4.PNG" height="12px" width="12px">, <img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/fig5.PNG" height="12px" width="12px"> icon. The user also can click <img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/fig6.PNG" height="12px" width="12px">) icon to maximize it to full-screen and click <img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/fig7.PNG" height="12px" width="12px"> icon to reset map to north direction. The area with a red point is the country or region where the user has transformers.  
-
+<p><strong>(3)   Spatial View:</strong> The panel shows the geographical distribution of transformer locations. As a default first display, the area marked in red point is where the transformer is installed. The user can zoom in and out from the world and specific city map by mouse wheel button or click  <img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/fig4.PNG" height="12px" width="12px">, <img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/fig5.PNG" height="12px" width="12px"> icon. The user also can click <img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/fig6.PNG" height="12px" width="12px">) icon to maximize it to full-screen and click <img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/fig7.PNG" height="12px" width="12px"> icon to reset map to north direction. The area with a red point is the country or region where the user has transformers.  </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Powr_substation_Monitoring_3.PNG" height="300px" width="450px">
 &nbsp;
+</figure>
 
-
-**(4)   Health Status  Chart:** The chart shows the percentage of transformers for each health status.  A tool-tip window displays the number of transformers at each status. And the number of all registered transformers is provided at the center of chart. In addition, the number of transformers at each status is listed under the chart.   
-※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status).  
-
-
+<p><strong>(4)   Health Status  Chart:</strong> The chart shows the percentage of transformers for each health status.  A tool-tip window displays the number of transformers at each status. And the number of all registered transformers is provided at the center of chart. In addition, the number of transformers at each status is listed under the chart. <br />
+※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status).  </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Powr_substation_Monitoring_4.PNG" height="330px" width="300px">
-&nbsp;
+</figure>
 
-
-**(5)   Alarm Table:** It is the summary of alarm page. 
-
-
+<p><strong>(5)   Alarm Table:</strong> It is the summary of alarm page. </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Powr_substation_Monitoring_5.PNG" height="90px" width="600px">
-&nbsp; 
+</figure>
 
-## Power Transformer Monitoring
-This screen covers the detailed information of the targeted transformer including trend analysis, industrial AI-based diagnosis and prognosis results, rule-based diagnosis results from core features.  
-
----
-
-### Summary Information
-This function provides the latest analysis results of the transformer in brief.
-
-
-**(1)   Function Tree:** When enter the individual transformer page, the function tree is displayed at the right panel. The panel lists some tools for user selection such as a summary of the transformer status, DGA Trends, AI, Rule, Similarity analysis, Report.
-
-
+<h2 id="power-transformer-monitoring">Power Transformer Monitoring</h2>
+<p>This screen covers the detailed information of the targeted transformer including trend analysis, industrial AI-based diagnosis and prognosis results, rule-based diagnosis results from core features.  </p>
+<hr />
+<h3 id="summary-information">Summary Information</h3>
+<p>This function provides the latest analysis results of the transformer in brief.</p>
+<p><strong>(1)   Function Tree:</strong> When enter the individual transformer page, the function tree is displayed at the right panel. The panel lists some tools for user selection such as a summary of the transformer status, DGA Trends, AI, Rule, Similarity analysis, Report.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Summary_1.PNG" height="200px" width="50px">
+</figure>
 
-
-**(2)   Fault Isolation:** The panel shows fault components in 3D visual image. When the fault is detected on the transformer by Industrial AI-based diagnosis, the fault component is highlighted in the 3D model. 
-
-
+<p><strong>(2)   Fault Isolation:</strong> The panel shows fault components in 3D visual image. When the fault is detected on the transformer by Industrial AI-based diagnosis, the fault component is highlighted in the 3D model. </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Summary_2.PNG" height="500px" width="500px">
+</figure>
 
-
-**(3)   Comprehensive Predictive Diagnosis Result:** The panel summarizes the predictive diagnosis results once the measured data are loaded. 
+<p><strong>(3)   Comprehensive Predictive Diagnosis Result:</strong> The panel summarizes the predictive diagnosis results once the measured data are loaded. 
 -   The results of diagnosis and prognosis are displayed based on industrial-AI methods. However, when fault is detected or less than four measurement data, prognosis algorithm is inactivated. 
 -   It also provides the latest diagnosis results in reference to IEEE Std C57.104TM-2008 ‘Dissolved key gas concentration limits’ diagnostics standard. 
--   The fault mode evaluated by the methods of IEEE Std C57.104TM-2008 (Doernenburg Ratios/Rogers Ratios) and IEC 60599:2015 (Duval Triangle 1/ Basic Gas Ratios) are also displayed, but it is inactivated  
-
-
+-   The fault mode evaluated by the methods of IEEE Std C57.104TM-2008 (Doernenburg Ratios/Rogers Ratios) and IEC 60599:2015 (Duval Triangle 1/ Basic Gas Ratios) are also displayed, but it is inactivated  </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Summary_3.PNG" height="55px" width="600px">
+</figure>
 
-
-**(4)   DGA Trend**: The panel displays the main DGA gas concentration trends throughout the time. 
+<p><strong>(4)   DGA Trend</strong>: The panel displays the main DGA gas concentration trends throughout the time. 
 -   The plotted gases are main six gases (H2, CH4, C2H2, C2H4, C2H6, CO). 
 -   The users can on/off a gas trend by clicking the legend of the gas. 
 -   When you put the cursor on a data point, the values of all selected gases are indicated by a pop-up window.
 -   On/Off button for raw and imputation data display (if H2, CH4, C2H2, C2H4, C2H6, CO exists four continuous data and data error is detected by GuardiOne, data is calibrated for industrial AI-based diagnosis and prognosis). 
--   A function of pop-up window is provided to enlarge the plot. 
-
-
+-   A function of pop-up window is provided to enlarge the plot. </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Summary_4.PNG" height="220px" width="600px">
+</figure>
 
-
-**(5)   Health State Trend:** The panel displays the entire health status (normal, warning, critical, fault) trend of the transformer, which allows users to understand the overall changes in transformer status. If prognosis algorithm is activated, the predicted status is indicated by dotted line at last.
+<p><strong>(5)   Health State Trend:</strong> The panel displays the entire health status (normal, warning, critical, fault) trend of the transformer, which allows users to understand the overall changes in transformer status. If prognosis algorithm is activated, the predicted status is indicated by dotted line at last.
 -   When user put the cursor on a data point, the measurement date is indicated by a pop-up window. 
 -   If prognosis algorithm is activated, the predicted status is indicated by dotted line. 
 *Exception: If the fault is detected or measurement data is not enough, we do not draw a prognostic result.
 -   A function of pop-up window is provided to enlarge the plot.
-※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status). 
-
-
+※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status). </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Summary_5.PNG" height="210px" width="600px">
+</figure>
 
-
---------
-### Trend Analysis
-
-**Gas Trend:**
-This function offers Gas Concentration Trend, Key Gas Trend, Rate of Change Trend plots that represent gas characteristics intuitively.  
-
-**OLTC Trend:**
-OLTC Trend tab is provided if OLTC DGA data exists. This function offers three Gas Concentration Trend, Key Gas Trend, Rate of Change Trend plots of OLTC DGA data  
-
----
-
-**(1)   Gas Concentration Trend:** The panel visually provides the whole gas DGA data throughout the time. 
+<hr />
+<h3 id="trend-analysis">Trend Analysis</h3>
+<p><strong>Gas Trend:</strong>
+This function offers Gas Concentration Trend, Key Gas Trend, Rate of Change Trend plots that represent gas characteristics intuitively.  </p>
+<p><strong>OLTC Trend:</strong>
+OLTC Trend tab is provided if OLTC DGA data exists. This function offers three Gas Concentration Trend, Key Gas Trend, Rate of Change Trend plots of OLTC DGA data  </p>
+<hr />
+<p><strong>(1)   Gas Concentration Trend:</strong> The panel visually provides the whole gas DGA data throughout the time. 
 -   The plotted gases are H2, C2H2, C2H6, C2H4, CH4, CO, C3H8, H2O (left y axis, solid line) TDCG, CO2, O2, N2 (right y axis, dashed line). 
 -   The users can on/off a gas trend by clicking the legend of the gas. 
 -   When you put the cursor on a data point, the values of all selected gases are indicated by a pop-up window. 
 -   On/Off button for raw and imputation data display (if H2, CH4, C2H2, C2H4, C2H6, CO exists four continuous data and data error is detected by GuardiOne, data is calibrated for industrial AI-based diagnosis and prognosis). 
--   A function of pop-up window is provided to enlarge the plot.
-
-
+-   A function of pop-up window is provided to enlarge the plot.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Trend_1.PNG" height="210px" width="600px">
+</figure>
 
-
-**(2)   Key Gas Trend:** In order to make it easier for the users to understand the correlation between the three key hydrocarbon gases (CH4, C2H4, C2H6), the panel shows 3D trend plot of the three gases over time.
+<p><strong>(2)   Key Gas Trend:</strong> In order to make it easier for the users to understand the correlation between the three key hydrocarbon gases (CH4, C2H4, C2H6), the panel shows 3D trend plot of the three gases over time.
 -   Yellow and red point indicate the first and last gas respectively within the setting time period. 
 -   When you put the cursor on a data point, the values of three gases are indicated by a pop-up window.
 -   On/Off button for raw and imputation data display (if H2, CH4, C2H2, C2H4, C2H6, CO exists four continuous data and data error is detected by GuardiOne, data is calibrated for industrial AI-based diagnosis and prognosis). 
--   A function of pop-up window is provided to enlarge the plot.
-
-
+-   A function of pop-up window is provided to enlarge the plot.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Trend_2.PNG" height="210px" width="300px">
+</figure>
 
-
-**(3)   Rate of Change Trend:** The trend provides the rate of change of each gas between two measuring points.
+<p><strong>(3)   Rate of Change Trend:</strong> The trend provides the rate of change of each gas between two measuring points.
 -   The plotted gases are H2, C2H2, C2H6, C2H4, CH4, CO, C3H8, H2O (left y axis, solid line) TDCG, CO2, O2, N2 (right y axis, dashed line). 
 -   The value is calculated by dividing the gas difference between two measuring points by month difference between two measured dates. 
 -   The users can hide a rate change trend of specific gas trend by clicking the legend of the gas. 
 -   When you put the cursor on a data point, the rate change of all selected gases are indicated by a pop-up window. 
 -   On/Off button for raw and imputation data display (if H2, CH4, C2H2, C2H4, C2H6, CO exists four continuous data and data error is detected by GuardiOne, data is calibrated for industrial AI-based diagnosis and prognosis). 
--   A function of pop-up window is provided to enlarge the plot.
-
-
+-   A function of pop-up window is provided to enlarge the plot.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Trend_3.PNG" height="210px" width="600px">
+</figure>
 
-
----
-
-### Industrial AI-based Diagnosis and Prognosis
-
-This function provides overall diagnostic and prognostic results based on industrial AI methods. The dashboard contains health feature space, health state trend, the health status at present and future, and fault isolation.   
-
-
-**(1)   Health Feature Space:** Health feature space is composed of two key health features derived from deep learning.  This space is a diagnostic space which shows the entire health feature trend over time. 
+<hr />
+<h3 id="industrial-ai-based-diagnosis-and-prognosis">Industrial AI-based Diagnosis and Prognosis</h3>
+<p>This function provides overall diagnostic and prognostic results based on industrial AI methods. The dashboard contains health feature space, health state trend, the health status at present and future, and fault isolation.   </p>
+<p><strong>(1)   Health Feature Space:</strong> Health feature space is composed of two key health features derived from deep learning.  This space is a diagnostic space which shows the entire health feature trend over time. 
 -   The big points on the background data are health features of targeted transformer and the highlighted point is the latest feature calculated with the latest DGA data.
 -   User can check the movement of the health feature by adjusting the color bar in the upper right.
 -   User can zoom in and out the feature space by adjusting right vertical white bar and lower horizontal white bar or using mouse wheel button. And, click the ‘int’ button, the feature space returns to the original size.
 -   User can activate or deactivate the health feature by clicking the item in the legend.
 -   Putting the cursor on a data point, the measurement date and gas values are indicated by a pop-up window. 
--   Users can trace the movement of feature points to check the condition of the transformers. If featured points are colored in orange or close to the red section, it is recommended to check the value change carefully for transformer protection. Even if the movement of the dots are slight, it may cause a huge damage to the transformer only with a small abnormal operation.   
-※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status
-
-
+-   Users can trace the movement of feature points to check the condition of the transformers. If featured points are colored in orange or close to the red section, it is recommended to check the value change carefully for transformer protection. Even if the movement of the dots are slight, it may cause a huge damage to the transformer only with a small abnormal operation. <br />
+※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/AI_1.PNG" height="270px" width="370px">
+</figure>
 
-
-**(2)   Health State Trend:** The panel provides a historical change of health status. And it also presents the predicted status after a year. You can plan the maintenance action by referring to this. When you put the cursor on a data point, the health status at that moment is indicated by a pop-up window. If prognosis algorithm is activated, the predicted status is indicated by dotted line at last. 
-
-*&nbsp;Exception: If the fault is detected or measurement data is not enough, we do not draw a prognostic result. - A function of pop-up window is provided to enlarge the plot.
-
-##### ※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status). 
-
-
+<p><strong>(2)   Health State Trend:</strong> The panel provides a historical change of health status. And it also presents the predicted status after a year. You can plan the maintenance action by referring to this. When you put the cursor on a data point, the health status at that moment is indicated by a pop-up window. If prognosis algorithm is activated, the predicted status is indicated by dotted line at last. </p>
+<p>*&nbsp;Exception: If the fault is detected or measurement data is not enough, we do not draw a prognostic result. - A function of pop-up window is provided to enlarge the plot.</p>
+<h5 id="blue-normal-status-green-caution-status-yellow-warning-status-orange-critical-status-red-fault-status">※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status).</h5>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/AI_2.PNG" height="270px" width="370px">
+</figure>
 
-
-**(3)   Diagnosis and Prognosis Result:** The panel shows the results of diagnosis and prognosis with date.
-
-
+<p><strong>(3)   Diagnosis and Prognosis Result:</strong> The panel shows the results of diagnosis and prognosis with date.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/AI_3.PNG" height="70px" width="370px">
+</figure>
 
-
-**(4)   Fault Isolation:** The panel tells you which of four components (Winding, OLTC, Core, and Bushing) is faulty.
-
-*&nbsp;Exception: If the fault is not detected, we do not draw a fault isolation result.
-
-
+<p><strong>(4)   Fault Isolation:</strong> The panel tells you which of four components (Winding, OLTC, Core, and Bushing) is faulty.</p>
+<p>*&nbsp;Exception: If the fault is not detected, we do not draw a fault isolation result.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/AI_4.PNG" height="70px" width="370px">
+</figure>
 
-
----
-
-### Rule - IEEE Std C57.104TM-2008
-
-This function provides DGA condition according to the rule-based method ‘IEEE Std C57.104TM-2008 - dissolved key gas concentration limits’.
-
-
+<hr />
+<h3 id="rule-ieee-std-c57104tm-2008">Rule - IEEE Std C57.104TM-2008</h3>
+<p>This function provides DGA condition according to the rule-based method ‘IEEE Std C57.104TM-2008 - dissolved key gas concentration limits’.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/IEEE.PNG" height="270px" width="500px">
+</figure>
 
-
-The panel shows trends of each gas and the whole gas in charts (H2, CH4, C2H2, C2H4, C2H6, CO, CO2, TDCG). 
--   The thresholds of the gas and TDCG* are also provided to be easily reviewed by which status the targeted gas is involved.
-*TDCG: Total Dissolved Combustible Gas Volume. The TDCG value does not include CO which is not a combustible gas. 
+<p>The panel shows trends of each gas and the whole gas in charts (H2, CH4, C2H2, C2H4, C2H6, CO, CO2, TDCG). 
+-   The thresholds of the gas and TDCG<em> are also provided to be easily reviewed by which status the targeted gas is involved.
+</em>TDCG: Total Dissolved Combustible Gas Volume. The TDCG value does not include CO which is not a combustible gas. 
 -    Very gas values are displayed as you hover over different charts.
 -   Diagnosis result is indicated at the upper right.
 -   When user put the cursor on a diagnosis result, the corresponding standard from IEEE Std C57.104TM-2008 is indicated by a pop-up window . 
 -   A function of pop-up window is provided for each plot to enlarge the plot.
-※   Green : (Condition 1) / Yellow : (Condition 2) / Orange : (Condition 3) / Red : (Condition 4) 
-
----
-
-### Rule - IEC 60599:2015
-
-This function provides DGA condition according to the rule-based method ‘IEC 60599:2015 - Ranges of 90% Typical Gas Concentration Values Observed in power transformers’.
-
-
+※   Green : (Condition 1) / Yellow : (Condition 2) / Orange : (Condition 3) / Red : (Condition 4) </p>
+<hr />
+<h3 id="rule-iec-605992015">Rule - IEC 60599:2015</h3>
+<p>This function provides DGA condition according to the rule-based method ‘IEC 60599:2015 - Ranges of 90% Typical Gas Concentration Values Observed in power transformers’.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/IEC.PNG" height="270px" width="500px">
+</figure>
 
-
-
-The panel shows trends of each gas in charts (H2, CH4, C2H2, C2H4, C2H6, CO, CO2). 
+<p>The panel shows trends of each gas in charts (H2, CH4, C2H2, C2H4, C2H6, CO, CO2). 
 -   The thresholds of the gas are also provided to be easily reviewed by which status the targeted gas is involved.
 -    Very gas values are displayed as you hover over different charts.
 -   Diagnosis result is indicated at the upper right.
 -   When user put the cursor on a diagnosis result, the corresponding standard from IEC 60599:2015 is indicated by a pop-up window. 
 -   A function of pop-up window is provided for each plot to enlarge the plot.
-※   Green : (Normal) / Yellow : (Caution Ⅰ) / Orange : (Caution Ⅱ) 
-
----
-
-### Rule - JAPAN ETRA 
-
-This function provides DGA condition according to the rule-based method ‘IEC 60599:2015 - Ranges of 90% Typical Gas Concentration Values Observed in power transformers’.
-
-
+※   Green : (Normal) / Yellow : (Caution Ⅰ) / Orange : (Caution Ⅱ) </p>
+<hr />
+<h3 id="rule-japan-etra">Rule - JAPAN ETRA</h3>
+<p>This function provides DGA condition according to the rule-based method ‘IEC 60599:2015 - Ranges of 90% Typical Gas Concentration Values Observed in power transformers’.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/JAPAN.PNG" height="270px" width="500px">
+</figure>
 
-
-The panel shows trends of each gas and the whole gas in charts (H2, CH4, C2H2, C2H4, C2H6, CO, TCG). 
-*&nbsp;TCG = (H2 + CH4 + C2H6 + C2H4 + C2H2 + CO) 
-
--   The thresholds of the gas and TCG* are also provided to be easily reviewed by which status the targeted gas is involved 
--    Very gas values are displayed as you hover over different charts.
--   Diagnosis result is indicated at the upper right.
--   When user put the cursor on a diagnosis result, the corresponding standard from JAPAN ETRA is indicated by a pop-up window. 
--   A function of pop-up window is provided for each plot to enlarge the plot.
-
-※&nbsp;Green : (Normal) / Yellow : (Warning Level Ⅰ) / Orange : (Warning Level Ⅱ) / Red : (Trouble Level )
-
-
----
-
-### Rule - Duval Triangle 1
-
-‘Duval Triangle 1’ is an evaluation of possible fault type method provided in ‘IEC 60599 – Mineral oil-filed electrical equipment in service – Guidance on the interpretation of dissolved and free gases analysis’ for diagnosis of fault mode. The method is active when the transformer is detected worse than caution status by means of AI techniques. 
-
-
+<p>The panel shows trends of each gas and the whole gas in charts (H2, CH4, C2H2, C2H4, C2H6, CO, TCG). 
+*&nbsp;TCG = (H2 + CH4 + C2H6 + C2H4 + C2H2 + CO) </p>
+<ul>
+<li>The thresholds of the gas and TCG* are also provided to be easily reviewed by which status the targeted gas is involved </li>
+<li>Very gas values are displayed as you hover over different charts.</li>
+<li>Diagnosis result is indicated at the upper right.</li>
+<li>When user put the cursor on a diagnosis result, the corresponding standard from JAPAN ETRA is indicated by a pop-up window. </li>
+<li>A function of pop-up window is provided for each plot to enlarge the plot.</li>
+</ul>
+<p>※&nbsp;Green : (Normal) / Yellow : (Warning Level Ⅰ) / Orange : (Warning Level Ⅱ) / Red : (Trouble Level )</p>
+<hr />
+<h3 id="rule-duval-triangle-1">Rule - Duval Triangle 1</h3>
+<p>‘Duval Triangle 1’ is an evaluation of possible fault type method provided in ‘IEC 60599 – Mineral oil-filed electrical equipment in service – Guidance on the interpretation of dissolved and free gases analysis’ for diagnosis of fault mode. The method is active when the transformer is detected worse than caution status by means of AI techniques. </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Duval.PNG" height="270px" width="500px">
+</figure>
 
-
--   Concentrations (ppm) of CH4, C2H4, and C2H2 are shown as percentages of the total (CH4+C2H4+C2H2) and points are (%CH4, %C2H4, %C2H2) on the triangular coordinate system. The triangle chartis fenced off into different fault zones. The designated fault type decides the status according to the point location and indicates what kind of gas concentration it is. The small square boxes below the triangle corresponds to the fault modes (in color) provided by Duval Triangle 1. 
--   When user put the cursor on a point, the measurement date, fault mode, three gas values are indicated by a pop-up window. 
--   Measurement date, fault mode and gas composition ratios in table chart are provided so that users conveniently check the fault mode history. 
--   A function of pop-up window is provided to enlarge the plot.
-
----
-
-### Rule - Doernenburg and Rogers Ratios
-
-**(1)   Rogers Ratios:** Doernenburg ratios is an evaluation of possible fault type method provided in ‘IEEE Std C57.104TM-2008 - IEEE Guide for the Interpretation of Gases Generated in Oil-Immersed Transformers’ for diagnosis of fault mode. The method is active when the transformer is detected worse than caution status by means of AI techniques. The fault modes provided by Doernenburg Ratios are Thermal decomposition, Partial discharge (low-intensity PD), Arcing (high-intensity PD). 
-
-
+<ul>
+<li>Concentrations (ppm) of CH4, C2H4, and C2H2 are shown as percentages of the total (CH4+C2H4+C2H2) and points are (%CH4, %C2H4, %C2H2) on the triangular coordinate system. The triangle chartis fenced off into different fault zones. The designated fault type decides the status according to the point location and indicates what kind of gas concentration it is. The small square boxes below the triangle corresponds to the fault modes (in color) provided by Duval Triangle 1. </li>
+<li>When user put the cursor on a point, the measurement date, fault mode, three gas values are indicated by a pop-up window. </li>
+<li>Measurement date, fault mode and gas composition ratios in table chart are provided so that users conveniently check the fault mode history. </li>
+<li>A function of pop-up window is provided to enlarge the plot.</li>
+</ul>
+<hr />
+<h3 id="rule-doernenburg-and-rogers-ratios">Rule - Doernenburg and Rogers Ratios</h3>
+<p><strong>(1)   Rogers Ratios:</strong> Doernenburg ratios is an evaluation of possible fault type method provided in ‘IEEE Std C57.104TM-2008 - IEEE Guide for the Interpretation of Gases Generated in Oil-Immersed Transformers’ for diagnosis of fault mode. The method is active when the transformer is detected worse than caution status by means of AI techniques. The fault modes provided by Doernenburg Ratios are Thermal decomposition, Partial discharge (low-intensity PD), Arcing (high-intensity PD). </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Doernenburg.PNG" height="100px" width="500px">
+</figure>
 
-
--   R1 (Ratio1, CH4/H2), R2 (Ratio2, C2H2/C2H4), R3 (Ratio3, C2H2/CH4), R4 (Ratio4, C2H6/C2H2) are compared to limiting values, suggests corresponding fault mode. 
--   Measurement date, fault mode and gas composition ratios in table form are provided so that users conveniently check the fault mode history. 
--   If the denominator gas value of any of four gas composition ratios is 0, the status is displayed as 'No diagnosis possible'. In addition, if the fault mode cannot be calculated from the method, the result is output as ‘Fault not identifiable’. 
-
-
-**(2)   Doernenburg Ratios:** Rogers ratios is an evaluation of possible fault type method provided in ‘IEEE Std C57.104TM-2008 -IEEE Guide for the Interpretation of Gases Generated in Oil-Immersed Transformers’ for diagnosis of fault mode. The method is active when the transformer is detected worse than caution status by means of AI techniques. 
-
-
+<ul>
+<li>R1 (Ratio1, CH4/H2), R2 (Ratio2, C2H2/C2H4), R3 (Ratio3, C2H2/CH4), R4 (Ratio4, C2H6/C2H2) are compared to limiting values, suggests corresponding fault mode. </li>
+<li>Measurement date, fault mode and gas composition ratios in table form are provided so that users conveniently check the fault mode history. </li>
+<li>If the denominator gas value of any of four gas composition ratios is 0, the status is displayed as 'No diagnosis possible'. In addition, if the fault mode cannot be calculated from the method, the result is output as ‘Fault not identifiable’. </li>
+</ul>
+<p><strong>(2)   Doernenburg Ratios:</strong> Rogers ratios is an evaluation of possible fault type method provided in ‘IEEE Std C57.104TM-2008 -IEEE Guide for the Interpretation of Gases Generated in Oil-Immersed Transformers’ for diagnosis of fault mode. The method is active when the transformer is detected worse than caution status by means of AI techniques. </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Rogers.PNG" height="160px" width="500px">
+</figure>
 
-
--   R1 (Ratio1, C2H2/C2H4), R2 (Ratio2, CH4/H2), R5 (Ratio5, C2H4/C2H6) are compared to limiting values, suggests corresponding fault mode. The small square boxes next to 3D plot represents the fault mode provided by Rogers Ratios. The value points location shows the specific fault condition. 
--   Users click on the specific fault mode square box in the legend and put the cursor on the corresponding fault mode point in 3D plot, the measurement date, fault mode, three gas values are indicated by a pop-up window. 
--   Measurement date, fault mode and gas composition ratios in table form are provided so that users conveniently check the fault mode history. 
--   If the denominator gas value of the any of four gas composition ratios is 0, the status is displayed as 'No diagnosis possible'. In addition, if the fault mode cannot be calculated from the method, the result is output as ‘Fault not identifiable’.
--   A function of pop-up window is provided to enlarge the plot.
-
-
----
-
-### Rule - Basic Gas Ratios
-Basic Gas ratios is an evaluation of possible fault type method provided in ‘IEC 60599 – Mineral oil-filed electrical equipment in service – Guidance on the interpretation of dissolved and free gases analysis’ for diagnosis of fault mode. The method is active when the transformer is detected worse than caution status by means of AI techniques. 
-
-
+<ul>
+<li>R1 (Ratio1, C2H2/C2H4), R2 (Ratio2, CH4/H2), R5 (Ratio5, C2H4/C2H6) are compared to limiting values, suggests corresponding fault mode. The small square boxes next to 3D plot represents the fault mode provided by Rogers Ratios. The value points location shows the specific fault condition. </li>
+<li>Users click on the specific fault mode square box in the legend and put the cursor on the corresponding fault mode point in 3D plot, the measurement date, fault mode, three gas values are indicated by a pop-up window. </li>
+<li>Measurement date, fault mode and gas composition ratios in table form are provided so that users conveniently check the fault mode history. </li>
+<li>If the denominator gas value of the any of four gas composition ratios is 0, the status is displayed as 'No diagnosis possible'. In addition, if the fault mode cannot be calculated from the method, the result is output as ‘Fault not identifiable’.</li>
+<li>A function of pop-up window is provided to enlarge the plot.</li>
+</ul>
+<hr />
+<h3 id="rule-basic-gas-ratios">Rule - Basic Gas Ratios</h3>
+<p>Basic Gas ratios is an evaluation of possible fault type method provided in ‘IEC 60599 – Mineral oil-filed electrical equipment in service – Guidance on the interpretation of dissolved and free gases analysis’ for diagnosis of fault mode. The method is active when the transformer is detected worse than caution status by means of AI techniques. </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Basic_Gas.PNG" height="220px" width="500px">
+</figure>
 
-
--   R1 (Ratio1, C2H2/C2H4), R2 (Ratio2, CH4/H2), R5 (Ratio5, C2H4/C2H6) are compared to limiting values, suggests corresponding fault mode. The small square boxes next to 3D plot represents the fault mode provided by Basic Gas Ratios. The value points location shows the specific fault condition. 
--   Users click on the specific fault mode square box in the legend and put the cursor on the corresponding fault mode point in 3D plot, the measurement date, fault mode, three gas values are indicated by a pop-up window. 
--   Measurement date, fault mode and gas composition ratios in table form are provided so that users conveniently check the fault mode history. 
--   If the denominator gas value of the any of four gas composition ratios is 0, the status is displayed as 'No diagnosis possible'. In addition, if the fault mode cannot be calculated from the method, the result is output as ‘Fault not identifiable’.
--   A function of pop-up window is provided to enlarge the plot.
-
-
----
-
-### Similarity Trend Analysis (Optional) 
-This function provides users with meaningful insights for predictive maintenance of transformers by presenting the most similar transformers status analysis.
-*&nbsp;Exception: Similarity analysis is inactivated if data is not enough.
-
-
-**(1)   DGA Similarity Chart:** This chart shows the similarity of the top three most similar transformers. Click each transformer, the Analysis Table, DGA Trend, Health Status Trend are displayed. 
-
-
+<ul>
+<li>R1 (Ratio1, C2H2/C2H4), R2 (Ratio2, CH4/H2), R5 (Ratio5, C2H4/C2H6) are compared to limiting values, suggests corresponding fault mode. The small square boxes next to 3D plot represents the fault mode provided by Basic Gas Ratios. The value points location shows the specific fault condition. </li>
+<li>Users click on the specific fault mode square box in the legend and put the cursor on the corresponding fault mode point in 3D plot, the measurement date, fault mode, three gas values are indicated by a pop-up window. </li>
+<li>Measurement date, fault mode and gas composition ratios in table form are provided so that users conveniently check the fault mode history. </li>
+<li>If the denominator gas value of the any of four gas composition ratios is 0, the status is displayed as 'No diagnosis possible'. In addition, if the fault mode cannot be calculated from the method, the result is output as ‘Fault not identifiable’.</li>
+<li>A function of pop-up window is provided to enlarge the plot.</li>
+</ul>
+<hr />
+<h3 id="similarity-trend-analysis-optional">Similarity Trend Analysis (Optional)</h3>
+<p>This function provides users with meaningful insights for predictive maintenance of transformers by presenting the most similar transformers status analysis.
+*&nbsp;Exception: Similarity analysis is inactivated if data is not enough.</p>
+<p><strong>(1)   DGA Similarity Chart:</strong> This chart shows the similarity of the top three most similar transformers. Click each transformer, the Analysis Table, DGA Trend, Health Status Trend are displayed. </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Similarity_1.PNG" height="220px" width="100px">
+</figure>
 
-
-**(2)   Analysis Table:** This table provides all status information of the similar transformer.
+<p><strong>(2)   Analysis Table:</strong> This table provides all status information of the similar transformer.
 -   Including initial measurement date, similar time interval of targeted transformer, final measurement date, health status of final measurement date. 
 -   If the status of final data is diagnosed worse than caution, the fault modes analyzed by Duval Triangle 1, Doernenburg Ratios, Rogers Ratios, Basic Gas Ratios are offered. 
 -   If the fault is detected, the fault component is also indicated in the table. 
--   The final status and date can give the insight to user that the target transformer can have the similar status after the similar section.
-
-
+-   The final status and date can give the insight to user that the target transformer can have the similar status after the similar section.</p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Similarity_2.PNG" height="120px" width="600px">
+</figure>
 
-
-**(3)   DGA Trend:** This plot provides the main DGA gas concentration trends of similar transformer from initial to final.
+<p><strong>(3)   DGA Trend:</strong> This plot provides the main DGA gas concentration trends of similar transformer from initial to final.
 -   The plotted gases are main six gases (H2, CH4, C2H2, C2H4, C2H6, CO). 
 -   The highlighted white translucent background section is the most similar section.
 -   The users can on/off a gas trend by clicking the legend of the gas. 
 -   Putting the cursor on a data point, the values of all selected gases are indicated by a pop-up window.
--   A function of pop-up window is provided to enlarge the plot. 
-
-
+-   A function of pop-up window is provided to enlarge the plot. </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Similarity_3.PNG" height="140px" width="600px">
+</figure>
 
-
-**(4)   Health Status Trend:** This plot provides whole health status trend of similar transformer.
+<p><strong>(4)   Health Status Trend:</strong> This plot provides whole health status trend of similar transformer.
 -   The highlighted white translucent background section is the most similar section. 
 -   Putting the cursor on a data point, the measurement date is indicated by a pop-up window.
 -   A function of pop-up window is provided to enlarge the plot.
-※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status). 
-
-
+※ Blue : (Normal status) / Green: (Caution status) / Yellow : (Warning status) / Orange : (Critical status) / Red: (Fault status). </p>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Similarity_4.PNG" height="140px" width="600px">
+</figure>
 
-
----
-
-### Status Analysis Report
-
-
+<hr />
+<h3 id="status-analysis-report">Status Analysis Report</h3>
+<figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Report.png" height="260px" width="500px">
+</figure>
 
-
-The analysis report of the corresponding transformer is provided automatically. The analysis contents included in the report are as follows.
+<p>The analysis report of the corresponding transformer is provided automatically. The analysis contents included in the report are as follows.
 -   1 Page: Target transformer information 
 -   2 Page: Latest DGA value, Status Analysis Result, Action Plan
 -   3 Page: DGA Condition - IEEE Std C57.104-2008, IEC 60599:2015, JAPAN ETRA (latest DGA value)
@@ -578,7 +619,7 @@ The analysis report of the corresponding transformer is provided automatically. 
 -   6 Page: Rule – Duval Triangle 1, Doernenburg Ratios (latest fault mode)
 -   7 Page: Rule – Roger Ratios, Basic Gas Ratios (latest fault mode)
 -   8 Page: Similarity Analysis – Analysis tables of most similar three transformers
-In addition, file rotation, download, print, and resizing functions are also provided.
+In addition, file rotation, download, print, and resizing functions are also provided.</p>
               
             </div>
           </div>
