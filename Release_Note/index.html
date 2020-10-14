@@ -203,7 +203,6 @@
 </ul>
 <p><font size="3"> <em> DGA Data Management </em> </font> </p>
 <ul>
-<li>The DGA data list includes data acquisition date, H2, C2H2, C2H4, C2H6, CH4, CO, CO2, O2, N2, C3H8, H2O, TDCG, Acid, DGA analysis company, filtering date for both transformer DGA and OLTC DGA. The information such as data acquisition date, H2, C2H2, C2H4, C2H6, CH4, CO must be entered for the software to operate correctly.</li>
 <li>The data input window will pop up when the user clicks the upload icon. Users can manually enter data in the data entry window.  </li>
 <li>Users can download all DGA data for a specific transformer. When you click the download icon, you can download data in csv file format.</li>
 </ul>
@@ -211,13 +210,10 @@
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/gif/Asset2.gif" height="250px" width="900px">
 </figure>
 
-<p><br></p>
 <p><font size="4"> <strong> Alarm </strong> </font> </p>
 <ul>
 <li>The Alarm table includes analysis date, diagnostic status, prognostic status, corresponding possible faults and findings through gas value comparison, and recommended analysis date</li>
-<li>The default ordering of transformers is from fault to normal, based on diagnosis results.</li>
 <li>User can change the sorting sequence by clicking the upper and lower triangle icons in diagnosis or prognosis.</li>
-<li>Clicking the name of a transformer will display the analysis summary page of the corresponding transformer.</li>
 </ul>
 <figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/gif/Alarm.gif" height="250px" width="900px">
@@ -230,15 +226,39 @@
 </ul>
 <p><font size="3"> <em> Health Status Chart </em> </font> </p>
 <ul>
-<li>The chart shows the percentage of transformers for each health status. A tool-tip window displays the number of transformers at each status. The number of all registered transformers is provided at the center of chart. In addition, the number of transformers at each status is listed under the chart.</li>
+<li>The chart shows the percentage of transformers for each health status. A tool-tip window displays the number of transformers at each status. The number of all registered transformers is provided at the center of chart. In addition, </li>
 </ul>
-<p><font size="3"> <em> Alarm Table </em> </font> 
-* This page offers a summary of alarms.</p>
+<p><font size="3"> <em> Alarm Table </em> </font>  </p>
+<ul>
+<li>the number of transformers at each status is listed under the chart.</li>
+</ul>
 <figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/gif/Power_Substation_Monitoring.gif" height="250px" width="900px">
 </figure>
 
 <p><font size="4"> <strong> Summary Information</strong> </font> </p>
+<p><font size="3"> <em> Function Tree </em> </font> </p>
+<ul>
+<li>he panel lists tools that users can select, such as summary of the transformer status, DGA Trends, AI, Rule, Similarity Analysis, and Report.</li>
+</ul>
+<p><font size="3"> <em> Fault Isolation </em> </font> </p>
+<ul>
+<li>The panel shows faulty components through 3D visual image. When a fault is detected on the transformer by the Industrial AI-based diagnosis algorithm, the faulty component is highlighted on the 3D model.</li>
+</ul>
+<p><font size="3"> <em> Comprehensive Predictive Diagnosis Result </em> </font> </p>
+<ul>
+<li>The latest diagnosis results according to the IEEE Std C57.104TM-2008 ‘Dissolved key gas concentration limits’ diagnostics standard. </li>
+<li>The fault mode evaluated through the IEEE Std C57.104TM-2008 (Doernenburg Ratios/Rogers Ratios) and IEC 60599:2015 (Duval Triangle 1/ Basic Gas Ratios) methods are also displayed. However, this will not be shown when the transformer is at normal status.</li>
+</ul>
+<p><font size="3"> <em> DGA Trend </em> </font> </p>
+<ul>
+<li>Users can enlarge the plots through a pop-up window.</li>
+<li>Users can click the On/Off button to display raw and imputation data (when there are four continuous data points for H2, CH4, C2H2, C2H4, C2H6, CO, and a data error is detected by GuardiOne®, data will be calibrated to offer industrial AI-based diagnosis and prognosis).</li>
+</ul>
+<figure>
+<p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/gif/Power_Substation_Monitoring.gif" height="250px" width="900px">
+</figure>
+
 <p><font size="4"> <strong> Industrial AI based Diagnosis and Prognosis - Prognosis / Fault Isolation </strong> </font> </p>
 <p><font size="4"> <strong> Rule - Duval Triangle 1 / Doernenburg and Rogers Ratios / Basic Gas Ratios </strong> </font> </p>
 <p><font size="4"> <strong> Similarity Trend Analysis </strong> </font> </p>
