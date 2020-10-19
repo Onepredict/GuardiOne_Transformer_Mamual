@@ -150,6 +150,17 @@
 
 
 
+  <li class="toctree-l2">
+    <ul class="subnav-l2 toc-hidden">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#in-guardione-v11-the-following-features-are-modified">  In GuardiOne v.1.1, the following features are modified  </a>
+        </li>
+    
+    </ul>
+  </li>
+
 
   
         
@@ -194,14 +205,15 @@
               
                 <h1 id="release-notes">Release Notes</h1>
 <h1 id="v11-october-2020">v.1.1 - October 2020</h1>
-<hr />
+<h2 id="in-guardione-v11-the-following-features-are-modified"><font size="3"> <em> In GuardiOne v.1.1, the following features are modified </em> </font></h2>
 <p><font size="4"> <strong> Asset </strong> </font> </p>
 <p><font size="3"> <em> Transformer Information List </em> </font> </p>
 <ul>
-<li>Change contents of asset management: transformer name, register date, site, voltage(kV), capacity, manufacturer, manufacturing date, and operating date.  </li>
+<li><strong>Contents of asset management have been modified:</strong> transformer name, register date, site, voltage(kV), capacity, manufacturer, manufacturing date, and operating date.  </li>
 </ul>
 <p><font size="3"> <em> DGA Data Management </em> </font> </p>
 <ul>
+<li>Data upload and download features have been added.</li>
 <li>The data input window will pop up when the user clicks the upload icon. Users can manually enter data in the data entry window.  </li>
 <li>Users can download all DGA data for a specific transformer. When you click the download icon, you can download data in csv file format.</li>
 </ul>
@@ -211,43 +223,55 @@
 
 <p><font size="4"> <strong> Alarm </strong> </font> </p>
 <ul>
-<li>The Alarm table includes analysis date, diagnostic status, prognostic status, corresponding possible faults and findings through gas value comparison, and recommended analysis date</li>
+<li><strong>Contents of alarm table have been modified:</strong> analysis date, diagnostic status, prognostic status, corresponding possible faults and findings through gas value comparison, and recommended analysis date</li>
 <li>User can change the sorting sequence by clicking the upper and lower triangle icons in diagnosis or prognosis.</li>
 </ul>
+<p><font size="3"> <em> Present the Possible Faults and Possible Findings  </em> </font> </p>
+<ul>
+<li>In case of diagnosis beyond the warning level, Possible Faults and Possible Findings are presented based on the table below.</li>
+</ul>
+<p><font size="2"> <em> *&nbsp;The table below refers to KEPCO's “Substation Facility Prevention Diagnosis Standard” based on the main generated gas.</em> </font> </p>
+<figure>
+<p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Present the Possible Faults and Possible Findings.png" height="250px" width="900px">
+</figure>
+
+<p><font size="3"> <em> •  Recommended action plans for each state   </em> </font> </p>
+<ul>
+<li>Normal: Analysis of gas in oil after 12 month</li>
+<li>Caution: Analysis of gas in oil after 6 month</li>
+<li>Warning: Analysis of gas in oil after 3 month</li>
+<li>Critical: Analysis of gas in oil after 1 month</li>
+<li>Fault: Maintenance Required</li>
+</ul>
+<p><font size="2"> <em> *&nbsp;The following measures are recommended by referring to the “Substation Facility Prevention Diagnosis Standard” of KEPCO.</em> </font> </p>
 <figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/gif/Alarm.gif" height="250px" width="900px">
 </figure>
 
 <p><font size="4"> <strong> Power Substation Monitoring </strong> </font> </p>
-<p><font size="3"> <em> Asset Tree Structure </em> </font> </p>
-<ul>
-<li>A tree-like panel represents the registered transformers. Clicking the name of a transformer will display the analysis summary page of the corresponding transformer.</li>
-</ul>
 <p><font size="3"> <em> Health Status Chart </em> </font> </p>
 <ul>
-<li>The chart shows the percentage of transformers for each health status. A tool-tip window displays the number of transformers at each status. The number of all registered transformers is provided at the center of chart. In addition, </li>
+<li>The health status of transformer has increased from stage 4 to stage 5. </li>
 </ul>
 <p><font size="3"> <em> Alarm Table </em> </font>  </p>
 <ul>
-<li>the number of transformers at each status is listed under the chart.</li>
-</ul>
+<li>The sorting sequence function is added by clicking the upper and lower triangle icons in diagnosis or prognosis.
 <figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/gif/Power_Substation_Monitoring.gif" height="250px" width="900px">
-</figure>
-
+</figure></li>
+</ul>
 <p><font size="4"> <strong> Summary Information</strong> </font> </p>
 <p><font size="3"> <em> Function Tree </em> </font> </p>
 <ul>
-<li>he panel lists tools that users can select, such as summary of the transformer status, DGA Trends, AI, Rule, Similarity Analysis, and Report.</li>
+<li>The similarity analysis tab is independent from trend tab and report tab is added.</li>
 </ul>
-<p><font size="3"> <em> Fault Isolation </em> </font> </p>
+<p><font size="3"> <em> 3D Model Image </em> </font> </p>
 <ul>
-<li>The panel shows faulty components through 3D visual image. When a fault is detected on the transformer by the Industrial AI-based diagnosis algorithm, the faulty component is highlighted on the 3D model.</li>
+<li>The graphics of the 3D model have been dramatically improved. It is described more realistically than the previous version.</li>
 </ul>
 <p><font size="3"> <em> Comprehensive Predictive Diagnosis Result </em> </font> </p>
 <ul>
-<li>The latest diagnosis results according to the IEEE Std C57.104TM-2008 ‘Dissolved key gas concentration limits’ diagnostics standard. </li>
-<li>The fault mode evaluated through the IEEE Std C57.104TM-2008 (Doernenburg Ratios/Rogers Ratios) and IEC 60599:2015 (Duval Triangle 1/ Basic Gas Ratios) methods are also displayed. However, this will not be shown when the transformer is at normal status.</li>
+<li>The fault modes evaluated through the IEEE Std C57.104TM-2008 (Doernenburg Ratios/Rogers Ratios) are added.</li>
 </ul>
 <p><font size="3"> <em> DGA Trend </em> </font> </p>
 <ul>
@@ -256,6 +280,28 @@
 </ul>
 <figure>
 <p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/gif/summary_information.gif" height="250px" width="900px">
+</figure>
+
+<p><font size="4"> <strong> Industrial AI-based Diagnosis and Prognosis - Health Feature Space / Health State Trend  </strong> </font> </p>
+<ul>
+<li>
+<p>Segmentation of AI-based diagnostic status by adding Caution. (Diagnosis states: Normal, Caution, Warning, Critical, Fault)</p>
+</li>
+<li>
+<p>Machine learning clustering algorithm and health feature space trend analysis to understand the diagnostic status of transformers with improved reliability.</p>
+</li>
+<li>
+<p>Re-diagnosis of the status of existing data and re-learning of AI-based prediction algorithms due to refinement of diagnosis status.</p>
+</li>
+<li>
+<p>Diagnosis status segmentation confirmed that AI-based predictive model performance improved by 3.47% and predicted false diagnosis rate decreased by 56.56%.</p>
+</li>
+<li>
+<p>There is additional gas generated according to each state cluster, and the main abnormality types for each state are as shown in the table below.</p>
+</li>
+</ul>
+<figure>
+<p align="center"><img src="https://Onepredict.github.io/GuardiOne_Transformer_Manual/img/Basis for diagnosis.png" height="250px" width="900px">
 </figure>
 
 <p><font size="4"> <strong> Rule - Duval Triangle 1 / Doernenburg and Rogers Ratios / Basic Gas Ratios </strong> </font> </p>
